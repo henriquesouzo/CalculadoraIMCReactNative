@@ -1,22 +1,18 @@
 import { StyleSheet } from "react-native";
+import ResultImc from "./ResultImc";
 
 const styles = StyleSheet.create({
     formContext: {
-        width: "100%",
-        height: "100%",
-        bottom: 0,
+        flex: 1,
         backgroundColor: "#ffffff",
         alignItems: "center",
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
-        marginTop: 30
+        paddingTop: 30
     },
 
     form:{
-        width: "100%",
-        height: "auto",
-        marginTop: 30,
-        padding: 10
+        width: "100%"
     },
 
     formLabel:{
@@ -26,13 +22,13 @@ const styles = StyleSheet.create({
     },
 
     input:{
-        width: "90%",
+        width: "90%", 
         borderRadius: 50,
         backgroundColor: "#f6f6f6",
         height: 40,
         margin: 12,
         paddingLeft: 10
-    },
+    }, 
 
     ButtonCalculator:{
         borderRadius: 50,
@@ -49,6 +45,49 @@ const styles = StyleSheet.create({
     textButtonCalculator:{
         fontSize: 20,
         color: "#ffffff",        
+    },
+
+    errorMessage: {
+        fontSize: 12,
+        color: "red",
+        fontWeight: "bold",
+        paddingLeft: 20
+    },
+
+    exibitionResultImc: {
+        width: "100%",
+        height: "50%"
+    },
+
+    listImcs: {
+        marginTop: 20
+    },
+
+    resultImcItem: {
+        fontSize: 26,
+        color: "red",
+        height: 50,
+        width: "100%",
+        paddingRight: 20
+    },
+
+    textResultItemList: {
+        fontSize: 16,
+        color: "red"
+    },
+
+    resultadoBom: {
+        fontSize: 16,
+        fontWeight: "bold",
+        color: "green",
+        marginBottom: 10
+    },
+
+    resultadoRuim: {
+        fontSize: 16,
+        fontWeight: "bold",
+        color: "red",
+        marginBottom: 10
     }
 });
 
