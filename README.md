@@ -1,0 +1,3 @@
+Um aplicativo feito com React Native e Expo na linguagem Javascript, este aplicativo foi desenvolvido durante o curso do OneBitCode do professor Felipe Moreira, mas depois fiz algumas melhoras no aplicativo, potencializando o meu aprendizado durante as aulas.
+
+A mobile application built with React Native and Expo using JavaScript. This app was originally developed during the OneBitCode course taught by Felipe Moreira. After completing the course, I made several improvements to the application, enhancing its features and further strengthening my learning experience throughout the development process.
