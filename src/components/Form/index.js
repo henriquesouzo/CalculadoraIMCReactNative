@@ -70,6 +70,19 @@ export default function Form(){
         
     }
 
+    function formatHeight(text) {
+        // Remove tudo que não for número
+        let value = text.replace(/\D/g, '');
+
+        value = value.slice(0, 3);
+
+        if (value.length >= 2) {
+            value = value.replace(/^(\d)(\d+)/, '$1,$2');
+        }
+
+        setHeight(value);
+    }
+
     return(
         
         <View style={styles.formContext}>
@@ -78,11 +91,11 @@ export default function Form(){
             <Pressable onPress={Keyboard.dismiss} style={styles.form}>
                 <Text style={styles.formLabel}>Altura</Text>
                 <Text style={styles.errorMessage}>{errorMessage}</Text>
-                <TextInput style={styles.input} onChangeText={setHeight} value={height} placeholder="Ex. 1.75" keyboardType="numeric" />
+                <TextInput style={styles.input} onChangeText={formatHeight} value={height} placeholder="Ex. 1.75" keyboardType="numeric" maxLength={4} />
 
                 <Text style={styles.formLabel}>Peso</Text>
                 <Text style={styles.errorMessage}>{errorMessage}</Text>
-                <TextInput style={styles.input} onChangeText={setWeight} value={weight} placeholder="Ex. 75.365" keyboardType="numeric" />
+                <TextInput style={styles.input} onChangeText={setWeight} value={weight} placeholder="Ex. 75.365" keyboardType="numeric" maxLength={6} />
 
                 <TouchableOpacity style={styles.ButtonCalculator} onPress={() => validationImc()}>
                     <Text style={styles.textButtonCalculator}>{textButton}</Text>

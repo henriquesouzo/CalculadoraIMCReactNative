@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "cursobit",
+    "name": "Calculadora IMC",
     "slug": "cursobit",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -20,10 +20,16 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.henriqueto.cursobit"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "da7d9b71-52b3-4675-9019-3555e87c38b2"
+      }
     }
   }
 }
